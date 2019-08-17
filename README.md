@@ -1,4 +1,4 @@
-# Slider-Puzzle
+# 8-Puzzle
 
 This is a famous puzzle problem known also as 8-puzzle algorithm or 15-puzzle algorithm..
 For detailed information checkout [this](https://en.wikipedia.org/wiki/15_puzzle).
