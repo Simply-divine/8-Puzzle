@@ -1,11 +1,13 @@
 
 
-**The problem.**  The  [8-puzzle](http://en.wikipedia.org/wiki/Fifteen_puzzle)  is a sliding puzzle  that is played on a 3-by-3 grid with 8 square tiles labeled 1 through 8, plus a blank square. The goal is to rearrange the tiles so that they are in row-major order, using as few moves as possible. You are permitted to slide tiles either horizontally or vertically into the blank square. The following diagram shows a sequence of moves from an  _initial board_  (left) to the  _goal board_  (right).
+# **The problem.**
+ The  [8-puzzle](http://en.wikipedia.org/wiki/Fifteen_puzzle)  is a sliding puzzle  that is played on a 3-by-3 grid with 8 square tiles labeled 1 through 8, plus a blank square. The goal is to rearrange the tiles so that they are in row-major order, using as few moves as possible. You are permitted to slide tiles either horizontally or vertically into the blank square. The following diagram shows a sequence of moves from an  _initial board_  (left) to the  _goal board_  (right).
 
 ![8puzzle 4 moves](https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/4moves.png)
 
   
-**Board data type.**  To begin, create a data type that models an  _n_-by-_n_  board with sliding tiles. Implement an immutable data type  `Board` .
+# **Board data type.** 
+ To begin, create a data type that models an  _n_-by-_n_  board with sliding tiles. Implement an immutable data type  `Board` .
 
 _Hamming and Manhattan distances._ To measure how close a board is to the goal board, we define two notions of distance. The  _Hamming distance_  betweeen a board and the goal board is the number of tiles in the wrong position. The  _Manhattan distance_  between a board and the goal board is the sum of the Manhattan distances (sum of the vertical and horizontal distance) from the tiles to their goal positions.
 
@@ -45,7 +47,8 @@ _Hamming and Manhattan distances._ To measure how close a board is to the goal b
 ![8puzzle game tree](https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/game-tree.png)
 
   
-**Solver data type.**  In this part, you will implement A* search to solve  _n_-by-_n_  slider puzzles. Create an immutable data type  `Solver`  with the following API:
+# **Solver data type.**
+  In this part, you will implement A* search to solve  _n_-by-_n_  slider puzzles. Create an immutable data type  `Solver`  with the following API:
 **Detecting unsolvable boards.**  Not all initial boards can lead to the goal board by a sequence of moves, including these two:
 
 ![unsolvable slider puzzles](https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/unsolvable.png)
@@ -93,7 +96,8 @@ here is my pseudocode:
 
 
 
-_Test client._  The following test client takes the name of an input file as a command-line argument and prints the minimum number of moves to solve the puzzle and a corresponding solution.
+# _Test client._ 
+ The following test client takes the name of an input file as a command-line argument and prints the minimum number of moves to solve the puzzle and a corresponding solution.
 
    
 
